@@ -167,7 +167,7 @@ namespace Nop.Services.Tests.Customers
             var result = _customerRegistrationService.ValidateCustomer("registered@test.com", "password");
             result.ShouldEqual(CustomerLoginResults.Successful);
 
-            result = _customerRegistrationService.ValidateCustomer("notregistered@test.coms", "password");
+            result = _customerRegistrationService.ValidateCustomer("notregistered@test.com", "password");
             result.ShouldEqual(CustomerLoginResults.NotRegistered);
         }
 
